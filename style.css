@@ -1,0 +1,130 @@
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background: #111913;
+    color: #e3ffe1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1c2d1c;
+    border-bottom: 2px solid #30ff80;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(48,255,128,0.05);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    color: #30ff80;
+    font-weight: 700;
+    font-family: 'Noto Sans', Arial, sans-serif;
+}
+
+main {
+    max-width: 700px;
+    margin: 2.5rem auto;
+    background: #19261e;
+    border-radius: 14px;
+    box-shadow: 0 4px 32px rgba(48,255,128,0.09);
+    padding: 2.2rem 2rem 2.5rem 2rem;
+    border: 2px solid #0d1a11;
+    position: relative;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#rant {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.3rem;
+}
+
+#rant .avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #30ff80 30%, #184d2d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d1a11;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 0 0 12px #184d2d22;
+}
+
+#rant .rant-content {
+    flex: 1;
+}
+
+.rant-meta {
+    font-size: 0.95rem;
+    color: #6beaa0;
+    margin-bottom: 0.7rem;
+}
+
+.rant-main-text {
+    font-size: 1.16rem;
+    color: #e3ffe1;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #30ff80;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.7;
+    margin-top: 0.5rem;
+}
+
+#part {
+    border-left: 4px solid #30ff80;
+    margin-left: 0.5rem;
+    padding-left: 1.4rem;
+    background: #183b2b;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 2px 8px #30ff8012;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #0d1a11;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #30ff80;
+    border-radius: 4px;
+}
+
+a, a:visited {
+    color: #30ff80;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #8affc1;
+}
+
+@media (max-width: 800px) {
+    main {
+        max-width: 97vw;
+        padding: 1.2rem 0.5rem 2rem 0.5rem;
+    }
+    #rant .avatar {
+        width: 44px;
+        height: 44px;
+        font-size: 1.4rem;
+    }
+}
